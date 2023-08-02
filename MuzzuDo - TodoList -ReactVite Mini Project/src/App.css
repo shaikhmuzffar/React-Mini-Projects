@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+.todoListSection{
+  height: 100vh;
+  width: 100%;
+  background-color: lavender;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.todoList{
+  max-width: 290px;
+  width: 100%;
+  height: 100%;
+  max-height: 60vh;
+  overflow-y: scroll;
+  border-radius: 8px;
+  background-color: #3b3a64;
+}
+
+/* navbar */
+.navbar{
+  color: #5b5b86;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.navbar span{
+  font-weight: 800;
+  font-size: 1rem;
+}
+.navIcon:hover{
+  color: #a2a2c2;
+}
+.appName:hover{
+  color: #a2a2c2;
+
+}
+/* inputbox */
+.InputBox{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  border-radius: 40px;
+  padding: 5px;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+  background-color: #282851;
+  margin-block: 1rem;
+}
+.InputBox input{
+  width: 85%;
+  height: 30px;
+  border: none;
+  padding: 5px;
+  outline: none;
+  color: #a2a2c2;
+  font-size: 1rem;
+  background-color: #282851;
+}
+.InputBox span{
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #3D79B1;
+  border-radius: 50%;
+}
+
+/* TodoBox */
+.TodoBox{
+  border-top: 1px solid #68688d;
+  padding:10px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.TodoBox small{
+  font-weight: 800;
+  font-size: .7rem;
+  text-transform: uppercase;
+  color: #5b5b86;
+}
+/* todoItem */
+.todoItem{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 6px;
+  background-color: #57577c;
+}
+.todoItem>div{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: #fff;
+}
+.todoItem>div>span{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: #a2a2c2;
+}
+.todoItem .time{
+  display: flex;
+  align-items: center;
+  font-size: 7px;
+  gap: 4px;
+  color: #fff;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: none;
+}
+.cancel{
+  font-size: 1.2rem;
+  color:#a2a2c2;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+}
+.cancel:hover{
+  color: #fff;
+}
