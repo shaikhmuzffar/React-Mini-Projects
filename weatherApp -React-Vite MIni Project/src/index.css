@@ -1,0 +1,70 @@
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+}
+.inputBox{
+    max-width: 400px;
+    width: 100%;
+    margin: 50px auto;
+    gap: 5px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.inputBox input{
+    flex: 3;
+    padding: 10px 10px;
+    outline: none;
+}
+.inputBox .search{
+    flex: 1;
+    background-color: #000;
+    color: #fff;
+    gap: 3px;
+    padding: 6px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* infoBox */
+.InfoBox{
+    max-width: 600px;
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    gap: 20px;
+    text-transform: capitalize;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius:10px;
+}
+.weatherInfo{
+    display: grid;
+    grid-template-columns:4fr 8fr;
+    border-top:1px solid #000 ;
+    padding-top: 20px;
+}
+.leftBox{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+.rightBox{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    border-left: 1px dashed black;
+    padding: 10px;
+}
+.rightBox .left,
+.rightBox .right{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
