@@ -1,0 +1,88 @@
+@font-face {
+  font-family: Gilroy-Black;
+  src: url(../src/assets/fonts/Gilroy-Black.ttf);
+}
+@font-face {
+  font-family: Gilroy-Medium;
+  src: url(../src/assets/fonts/Gilroy-Medium.ttf);
+}
+@font-face {
+  font-family: Gilroy-SemiBold;
+  src: url(../src/assets/fonts/Gilroy-SemiBold.ttf);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Gilroy-SemiBold;
+}
+body{
+  height: 100vh;
+  width: 100%;
+  background-color: lavender;
+  border: 1px solid;
+}
+.mainContainer{
+  max-width: 700px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.InputBox{
+  margin: 0 auto;
+  width: 300px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.InputBox input{
+  height: 35px;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+.InputBox button,.delete,.edit{
+  height: 35px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.delete,.edit{
+  padding: 0 20px;
+}
+.delete{
+  background-color: red;
+}
+.edit{
+  background-color: green;
+}
+.btn{
+  height: 30px;
+  padding: 0 10px;
+  margin-left: 10px;
+  border: none;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.red{
+  background-color: red;
+
+}
+.green{
+  background-color: green;
+
+}
+
+table{
+  width: 100%;
+  text-align: center;
+}
+
+td,th{
+  padding: 20px;
+  text-align: center;
+}
